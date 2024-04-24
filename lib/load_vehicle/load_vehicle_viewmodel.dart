@@ -7,8 +7,13 @@ class LoadVehicleViewModel extends ChangeNotifier {
 
   // Temporary variables to hold data until 'Continue' is clicked
   VehicleType? _tempType;
+  VehicleType? get selectedVehicle => _tempType;
+
   int? _tempKilometers;
+  int? get kilometers => _tempKilometers;
+
   String? _tempLicenseCode;
+  String? get licenseCode => _tempLicenseCode;
 
   // Updates the selected vehicle type temporarily.
   void selectVehicleType(VehicleType type) {
